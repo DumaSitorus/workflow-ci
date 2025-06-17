@@ -61,5 +61,3 @@ jobs:
           git add -f mlruns/
           git commit -m "Save mlruns from CI run" || true
           git push origin main
-
-      
