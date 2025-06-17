@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  CSV_URL: "MLproject/data_balita_preprocessing.csv"
+  CSV_URL: "MLProject/data_balita_preprocessing.csv"
   TARGET_VAR: "Status Gizi"
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
       # Run as a mlflow project
       - name: Run mlflow project
         run: |
-          mlflow run MLproject --env-manager=local 
+          mlflow run MLProject --env-manager=local 
 
       # Git LFS
       - name: Set up Git LFS
