@@ -1,0 +1,11 @@
+name: stunting-setection-mlflow
+ 
+conda_env: conda.yaml
+ 
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 500}
+      max_depth: {type: int, default: 20}
+      dataset : {type: string, default: "data_balita_preprocessing.csv"}
+    command: "python modelling.py {n_estimators} {max_depth} {dataset}"
